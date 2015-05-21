@@ -1,0 +1,36 @@
+﻿@model IEnumerable<FFMVC.Models.FFUser>
+
+@{
+    ViewBag.Title = "UserSearch";
+}
+
+<h2>TODO get Search functional after technical issues resolved</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </th>
+        <th></th>
+    </tr>
+
+
+
+</table>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" value="Search" class="btn btn-default" />
+    </div>
+</div>

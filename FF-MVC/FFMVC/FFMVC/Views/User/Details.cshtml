@@ -1,0 +1,112 @@
+﻿@model FFMVC.Models.FFUser
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FFUser</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageUrl)
+        </dd>
+
+    </dl>
+
+    <table class="table">
+        <tr>
+            <td>TODO: put nearby friends list here once issues resolved</td>
+        </tr>
+    </table>
+
+        @*<table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.user.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.user.Username)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.user.lat)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.user.lon)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.user.ImageUrl)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model.friends)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Username)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.lat)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.lon)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ImageUrl)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                        </td>
+                    </tr>
+                }
+
+            </table>*@
+
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
